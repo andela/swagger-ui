@@ -73,8 +73,9 @@
 window.onload = function() {
   // Build a system
   const ui = SwaggerUIBundle({
-    url: "swagger.json",
+    url: "https://andela-api-spec.storage.googleapis.com/swagger.json",
     dom_id: '#swagger-ui',
+    host: "api-staging.andela.com"
     presets: [
       SwaggerUIBundle.presets.apis,
       SwaggerUIStandalonePreset
@@ -84,7 +85,6 @@ window.onload = function() {
     ],
     layout: "StandaloneLayout"
   })
-
   window.ui = ui
 }
 </script>
